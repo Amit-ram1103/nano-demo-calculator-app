@@ -9,7 +9,7 @@ def greeting():
 
 @app.route("/calculator/add", methods=['POST'])
 def add():
-    data=request.json()
+    data=request.json
     if 'first' in data and 'second' in data:
         f=data['first']
         s=data['second']
@@ -21,7 +21,7 @@ def add():
 
 @app.route("/calculator/subtract", methods=['POST'])
 def subtract():
-    data=request.json()
+    data=request.json
     if 'first' in data and 'second' in data:
         f=data['first']
         s=data['second']
